@@ -1,0 +1,21 @@
+﻿<Window x:Class="Events_1___Interest.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Events_1___Interest"
+        mc:Ignorable="d"
+        Title="Interestberekening" Height="450" Width="800">
+    <Grid>
+        <Label x:Name="startCapitalLabel" Content="Beginkapitaal" HorizontalAlignment="Left" Margin="59,55,0,0" VerticalAlignment="Top" Width="130" HorizontalContentAlignment="Right"/>
+        <Label x:Name="desiredEndCapitalLabel" Content="Gewenst eindkapitaal" HorizontalAlignment="Left" Margin="59,79,0,0" VerticalAlignment="Top" Width="130" HorizontalContentAlignment="Right"/>
+        <Label x:Name="interestLabel" Content="Interestvoet" HorizontalAlignment="Left" Margin="59,103,0,0" VerticalAlignment="Top" Width="130" HorizontalContentAlignment="Right"/>
+        <TextBox x:Name="startCapitalTextBox" HorizontalAlignment="Left" Margin="194,59,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" KeyDown="TextBox_KeyDown"/>
+        <TextBox x:Name="desiredEndCapitalTextBox" HorizontalAlignment="Left" Margin="194,83,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" KeyDown="TextBox_KeyDown"/>
+        <TextBox x:Name="interestTextBox" HorizontalAlignment="Left" Margin="194,107,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" KeyDown="TextBox_KeyDown"/>
+        <TextBox x:Name="resultTextBox" HorizontalAlignment="Left" Margin="331,59,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="337" Height="242" IsReadOnly="True" IsEnabled="False"/>
+        <Button x:Name="calculateButton" Content="Berekenen" HorizontalAlignment="Left" Margin="331,319,0,0" VerticalAlignment="Top" Click="calculateButton_Click"/>
+        <Button x:Name="clearButton" Content="Wissen" HorizontalAlignment="Left" Margin="400,319,0,0" VerticalAlignment="Top" Click="clearButton_Click"/>
+        <Button x:Name="closeButton" Content="Afsluiten" HorizontalAlignment="Left" Margin="446,319,0,0" VerticalAlignment="Top" Click="closeButton_Click"/>
+    </Grid>
+</Window>
